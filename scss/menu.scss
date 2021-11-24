@@ -1,0 +1,72 @@
+$buttonblue: rgb(43,69,172);
+
+
+.menu {
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 20%;
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__main-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        padding: 0 5%;
+
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: grey;
+        }
+    }
+    &__login {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & button {
+            padding: 5px 30px;
+            border-radius:  100px;
+            cursor: pointer
+        }
+        
+        &--sign-up {
+            background-color: transparent;
+            margin-right: 10px;
+            border: 1px solid rgb(43,69,172);
+            transition: all .4s;
+        }
+
+        &--sign-up:hover {
+            border: 1px solid transparent;
+            background-color: rgb(43,69,172);
+            color: white;
+        }
+
+        &--sign-in {
+            background-color: rgb(43,69,172);
+            color: white;
+            transition: all .4s;
+            border: 1px solid transparent;
+        }
+        &--sign-in:hover {
+            background-color: transparent;
+            border: 1px solid rgb(43,69,172);
+            color: rgb(43,69,172);
+        }
+
+    }
+}

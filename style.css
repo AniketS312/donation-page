@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+.menu {
+  height: 10%;
+  width: 100%;
+  display: flex;
+}
+.menu__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+.menu__logo img {
+  cursor: pointer;
+}
+.menu__main-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  padding: 0 5%;
+}
+.menu__main-menu li {
+  list-style-type: none;
+}
+.menu__main-menu a {
+  text-decoration: none;
+  color: grey;
+}
+.menu__login {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu__login button {
+  padding: 5px 30px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.menu__login--sign-up {
+  background-color: transparent;
+  margin-right: 10px;
+  border: 1px solid #2b45ac;
+  transition: all 0.4s;
+}
+.menu__login--sign-up:hover {
+  border: 1px solid transparent;
+  background-color: #2b45ac;
+  color: white;
+}
+.menu__login--sign-in {
+  background-color: #2b45ac;
+  color: white;
+  transition: all 0.4s;
+  border: 1px solid transparent;
+}
+.menu__login--sign-in:hover {
+  background-color: transparent;
+  border: 1px solid #2b45ac;
+  color: #2b45ac;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0 12%;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */
