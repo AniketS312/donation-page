@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 @import 'menu';
+@import 'content';
 
 $fontfamily: 'Quicksand', sans-serif;
+$menufont: 600;
 $headingfont: 500;
 $contentfont: 300;
 
@@ -38,6 +40,10 @@ span,
 a {
 font-weight: $headingfont;
 }
+
+a {
+    font-weight: $menufont;
+    }
 
 p {
     font-weight: $contentfont;
