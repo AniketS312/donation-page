@@ -1,0 +1,59 @@
+.content {
+    height: 90%;
+    display: flex;
+    & > div {
+        width: 50%;
+    }
+    // /////// text content
+    &__text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-size: 50px;
+            padding-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        p {
+            padding-bottom: 2rem;
+        }
+        // End of text content
+
+        // /////// form section
+        form {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+             box-sizing: border-box;
+            height: 40px;
+            width: 300px;
+            padding-left: 10px;
+            border: 1px solid gray;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        input[type="button"] {
+            height: 40px;
+            width: 90px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 1px solid $buttonblue;
+            background-color: $buttonblue;
+            color: white;
+            cursor: pointer;
+        }
+        // End of form section
+
+        //////////// no spam text
+        span {
+            font-size: 12px;
+            color: rgba(0,0,0, .6);
+            padding-left: 5px;
+        }
+    }
+}

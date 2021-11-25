@@ -5,7 +5,7 @@ $buttonblue: rgb(43,69,172);
     height: 10%;
     width: 100%;
     display: flex;
-
+    // /////// logo
     &__logo {
         display: flex;
         justify-content: flex-start;
@@ -15,7 +15,9 @@ $buttonblue: rgb(43,69,172);
             cursor: pointer;
         }
     }
+    // End of logo
 
+    //////////// Menu - Unordered List
     &__main-menu {
         display: flex;
         justify-content: space-around;
@@ -36,6 +38,9 @@ $buttonblue: rgb(43,69,172);
        
     
     }
+    // End of menu ---- SEE SUBMENU CSS BOTTOM
+
+    //////// Log in Buttons
     &__login {
         width: 30%;
         display: flex;
@@ -74,10 +79,12 @@ $buttonblue: rgb(43,69,172);
         }
 
     }
+    // End of Log In Buttons
+    
 }
 
 
-// Submenu 
+///////// Submenu 
 .sub-menu {
     position: absolute;
     top: -100%;
